@@ -7,6 +7,7 @@ import Order from '../components/Order'
 import Mine from '../components/Mine'
 import PinPaiPage from '../components/FindMore_components/PinPaiPage'
 import ListPinPaiPage from '../components/FindMore_components/ListPinPaiPage'
+import DetailPage from '../components/FindMore_components/DetailPage'
 Vue.use(Router)
 
 export default new Router({
@@ -17,7 +18,8 @@ export default new Router({
     
     {path: '/findmore/pinpaipage',name: 'pinpaipage',component:PinPaiPage},
     {path: '/findmore/pinpaipage/listpinpaipage',name: 'listpinpaipage',component:ListPinPaiPage},
-    
+    {path: '/findmore/pinpaipage/listpinpaipage/detailpage',name: 'detailpage',component:DetailPage},
+    {path: '/listpinpaipage/detailpage',name: 'detailpage',component:DetailPage},
     {path: '/order',name: 'order',component: Order},
     {path: '/mine',name: 'mine',component: Mine},
     {path: '/',redirect:'/outmai'},
